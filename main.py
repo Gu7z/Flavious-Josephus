@@ -30,9 +30,9 @@ def mata(num, homens):
   
   for i in range(len(homens)):
     if(not homens[i]):
-      global alo
-      print('Case {}: {}'.format(alo, i+1))
-      alo = alo + 1
+      global caseNumber
+      print('Case {}: {}'.format(caseNumber, i+1))
+      caseNumber = caseNumber + 1
 
 def restaUm(homens):
   resta = 0
@@ -48,7 +48,7 @@ solutions = input()
 
 cases = []
 
-alo = 1
+caseNumber = 1
 
 for x in range(0, int(solutions)):
   cases.append(input())
